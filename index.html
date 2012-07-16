@@ -1,9 +1,14 @@
 <!doctype html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!-- extended, because ie9 and mobile ie have their own quirks -->
+<!--[if IEMobile]> <html class="no-js ieMobile" lang="en"> <![endif]-->
+<![if !IEMobile]>
+<!--[if lt IE 7]>  <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>     <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>     <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>     <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<![endif]>
 <head>
   <meta charset="utf-8">
 
